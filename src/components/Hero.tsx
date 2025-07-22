@@ -19,7 +19,9 @@ const Hero = () => {
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               <span className="text-foreground animate-slide-up">نحن</span>{" "}
-              <span className="text-primary animate-glow animate-pulse-glow">وصلة</span>
+              <span className="inline-flex items-center">
+                <img src="/src/assets/w-logo.png" alt="وصلة" className="h-16 lg:h-20 mx-2 animate-glow animate-pulse-glow" />
+              </span>
               <br />
               <span className="text-foreground animate-slide-up" style={{animationDelay: '0.2s'}}>نجاحك</span>
             </h1>

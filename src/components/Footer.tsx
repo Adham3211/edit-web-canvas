@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-center md:text-right">
-              © 2024 وصلة. جميع الحقوق محفوظة.
+              © 2025 وصلة. جميع الحقوق محفوظة.
             </p>
             <div className="flex space-x-6 space-x-reverse">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

@@ -11,7 +11,7 @@ const Portfolio = () => {
       description: "منصة التسوق الإلكتروني الرائدة في المنطقة",
       logo: instashopLogo,
       category: "E-commerce",
-      services: ["التسويق الرقمي", "إدارة وسائل التواصل", "تحسين محركات البحث"],
+      services: ["تصميمات سوشيال ميديا", "كتابة محتوي", "اعلانات", "ماركتينج كامبين"],
       website: "https://instashop.com",
       color: "from-blue-500/20 to-purple-500/20"
     }
