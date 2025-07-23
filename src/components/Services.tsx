@@ -55,7 +55,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-32 bg-gradient-to-b from-background to-secondary/30 animate-gradient">
+    <section id="services" className="pt-40 pb-32 bg-gradient-to-b from-background to-secondary/30 animate-gradient">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-scale">
