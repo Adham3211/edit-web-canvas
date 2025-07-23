@@ -120,6 +120,7 @@ const Portfolio = () => {
               size="lg"
               className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg transition-all duration-300 text-lg px-8 py-4 animate-gradient hover-glow hover-scale animate-bounce-in"
               style={{animationDelay: '0.2s'}}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               ابدأ مشروعك معنا
               <ArrowRight className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

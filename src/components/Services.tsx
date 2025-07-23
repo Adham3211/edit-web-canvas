@@ -55,7 +55,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-secondary/30 animate-gradient">
+    <section id="services" className="py-32 bg-gradient-to-b from-background to-secondary/30 animate-gradient">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-scale">
@@ -105,7 +105,11 @@ const Services = () => {
             <p className="text-muted-foreground mb-6 animate-slide-up" style={{animationDelay: '0.1s'}}>
               نحن نقدم حلول مخصصة تماماً لاحتياجات عملك الفريدة
             </p>
-            <button className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 animate-gradient hover-glow animate-bounce-in" style={{animationDelay: '0.2s'}}>
+            <button 
+              className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 animate-gradient hover-glow animate-bounce-in" 
+              style={{animationDelay: '0.2s'}}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               تواصل معنا الآن
             </button>
           </div>

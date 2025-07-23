@@ -34,6 +34,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="group bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg transition-all duration-300 text-lg px-8 py-6 animate-gradient hover-glow hover-scale"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               ابدأ مشروعك معنا
               <ArrowRight className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform group-hover-slide" />
@@ -43,6 +44,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="group border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6 hover-scale hover-glow"
+              onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Play className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform animate-bounce-in" style={{animationDelay: '0.1s'}} />
               شاهد أعمالنا
@@ -62,6 +64,7 @@ const Hero = () => {
               <Button 
                 className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-3 hover-scale animate-bounce-in" 
                 style={{animationDelay: '0.2s'}}
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 انضم الآن
               </Button>
