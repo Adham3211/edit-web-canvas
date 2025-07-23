@@ -190,6 +190,7 @@ const Contact = () => {
               variant="secondary"
               size="lg"
               className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-4"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               احجز استشارة مجانية
             </Button>

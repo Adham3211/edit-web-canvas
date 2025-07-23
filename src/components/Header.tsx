@@ -44,7 +44,10 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg transition-all duration-300 animate-gradient hover-glow hover-scale animate-fade-in">
+            <Button 
+              className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg transition-all duration-300 animate-gradient hover-glow hover-scale animate-fade-in"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Phone className="ml-2 h-4 w-4 animate-bounce-in" />
               اتصل بنا
             </Button>
@@ -74,7 +77,10 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button className="w-full bg-gradient-to-r from-primary to-primary-glow">
+                <Button 
+                  className="w-full bg-gradient-to-r from-primary to-primary-glow"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   <Phone className="ml-2 h-4 w-4" />
                   اتصل بنا
                 </Button>
