@@ -32,20 +32,6 @@ const Footer = () => {
             <p className="text-muted-foreground mb-6 leading-relaxed">
               شركة رائدة في التسويق الرقمي، نساعد الشركات على الوصول إلى أهدافها من خلال استراتيجيات مبتكرة ومدروسة.
             </p>
-            <div className="flex space-x-4 space-x-reverse">
-              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
-                <span className="text-sm font-bold">T</span>
-              </button>
-              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
-                <span className="text-sm font-bold">I</span>
-              </button>
-              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
-                <span className="text-sm font-bold">L</span>
-              </button>
-              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
-                <span className="text-sm font-bold">W</span>
-              </button>
-            </div>
           </div>
 
           {/* Quick Links */}
