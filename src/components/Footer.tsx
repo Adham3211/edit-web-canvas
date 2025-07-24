@@ -32,52 +32,36 @@ const Footer = () => {
             <p className="text-muted-foreground mb-6 leading-relaxed">
               شركة رائدة في التسويق الرقمي، نساعد الشركات على الوصول إلى أهدافها من خلال استراتيجيات مبتكرة ومدروسة.
             </p>
+            <div className="flex space-x-4 space-x-reverse">
+              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
+                <span className="text-sm font-bold">T</span>
+              </button>
+              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
+                <span className="text-sm font-bold">I</span>
+              </button>
+              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
+                <span className="text-sm font-bold">L</span>
+              </button>
+              <button className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300">
+                <span className="text-sm font-bold">W</span>
+              </button>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold text-foreground mb-6">روابط سريعة</h3>
             <ul className="space-y-3">
-              <li>
-                <a 
-                  href="#home" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  الرئيسية
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#services" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  خدماتنا
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#about" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  من نحن
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#portfolio" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  أعمالنا
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#contact" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  تواصل معنا
-                </a>
-              </li>
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <a 
+                    href="#" 
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -126,8 +110,16 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-center md:text-right">
-              © 2025 وصلة. جميع الحقوق محفوظة.
+              © 2024 وصلة. جميع الحقوق محفوظة.
             </p>
+            <div className="flex space-x-6 space-x-reverse">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                سياسة الخصوصية
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                شروط الاستخدام
+              </a>
+            </div>
           </div>
         </div>
       </div>
