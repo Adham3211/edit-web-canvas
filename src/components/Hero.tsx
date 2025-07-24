@@ -59,7 +59,7 @@ const Hero = () => {
                 نحن هنا لربط نجاحك معك
               </h3>
               <p className="text-white/90 mb-6 animate-slide-up" style={{animationDelay: '0.1s'}}>
-                We Are Here To Connect your Success with you
+                نحن هنا لربط نجاحك معك - شريكك في تحقيق التميز الرقمي
               </p>
               <Button 
                 className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-3 hover-scale animate-bounce-in" 
