@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -7,19 +7,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "اتصل بنا",
-      value: "+966 50 123 4567",
+      value: "01007113793",
       color: "text-primary"
     },
     {
       icon: Mail,
       title: "راسلنا",
-      value: "info@waslah.com",
+      value: "info@wasla.com",
       color: "text-primary"
     },
     {
       icon: MapPin,
       title: "زورنا",
-      value: "الرياض، المملكة العربية السعودية",
+      value: "مصر - التجمع الخامس",
       color: "text-primary"
     },
     {
@@ -79,21 +79,30 @@ const Contact = () => {
             </div>
 
             {/* Social Media */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-2xl p-8 border border-primary/20 animate-fade-in" style={{animationDelay: '0.4s'}}>
-              <h4 className="text-xl font-bold mb-4 text-primary">تابعنا على وسائل التواصل</h4>
-              <p className="text-muted-foreground mb-6">
+            <div className="bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-2xl p-8 border border-primary/20 animate-fade-in animate-gradient hover-glow" style={{animationDelay: '0.4s'}}>
+              <h4 className="text-xl font-bold mb-4 text-primary animate-bounce-in">تابعنا على وسائل التواصل</h4>
+              <p className="text-muted-foreground mb-6 animate-slide-up">
                 ابق على اطلاع بآخر أعمالنا ونصائحنا التسويقية
               </p>
               <div className="flex space-x-4 space-x-reverse">
-                <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-glow transition-colors">
-                  <span className="text-primary-foreground text-sm font-bold">T</span>
-                </button>
-                <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-glow transition-colors">
-                  <span className="text-primary-foreground text-sm font-bold">I</span>
-                </button>
-                <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary-glow transition-colors">
-                  <span className="text-primary-foreground text-sm font-bold">L</span>
-                </button>
+                <a 
+                  href="https://www.facebook.com/share/1AqTAQsf8h/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary-glow transition-all duration-300 hover-scale animate-bounce-in hover-glow"
+                  style={{animationDelay: '0.1s'}}
+                >
+                  <Facebook className="h-5 w-5 text-primary-foreground" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/wasla_agencyy?utm_source=qr&igsh=czl3encyMmJyNncy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary-glow transition-all duration-300 hover-scale animate-bounce-in hover-glow"
+                  style={{animationDelay: '0.2s'}}
+                >
+                  <Instagram className="h-5 w-5 text-primary-foreground" />
+                </a>
               </div>
             </div>
           </div>
@@ -181,6 +190,7 @@ const Contact = () => {
               variant="secondary"
               size="lg"
               className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-4"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               احجز استشارة مجانية
             </Button>

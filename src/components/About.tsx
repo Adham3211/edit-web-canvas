@@ -61,11 +61,6 @@ const About = () => {
               </div>
             </div>
 
-            <div className="pt-6">
-              <button className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 text-lg">
-                تعرف على فريقنا
-              </button>
-            </div>
           </div>
 
           {/* Features Cards */}
